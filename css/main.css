@@ -711,6 +711,7 @@ template {
 
 .widget__temp {
   margin-bottom: 0.625rem !important;
+  color: #000;
 }
 
 .data__title,
