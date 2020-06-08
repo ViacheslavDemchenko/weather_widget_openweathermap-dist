@@ -16,7 +16,11 @@
 
 html,
 body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   font-family: 'Roboto-Regular', 'Arial', 'Tahoma', sans-serif;
@@ -43,6 +47,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   max-width: 96rem;
+  height: 100%;
 }
 
 /* Box-sizing-model */
@@ -587,14 +592,18 @@ template {
 
 .main-section {
   width: 100%;
-  min-height: 100vh;
   padding: 0.625rem 0;
+  background: url(../img/bg_lg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main-section__inner {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 /* BLOCKS */
@@ -656,20 +665,20 @@ template {
 .widget__city,
 .widget__temp {
   text-align: center;
-  margin-bottom: 1.25rem;
+  margin: 0 0 1.25rem 0;
   padding: 0 1.25rem;
   font-family: "RobotoSlab-Bold";
   font-weight: 700;
   font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1.25rem;
-  color: #000;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #fff;
 }
 
 .city-choice__title {
   margin-bottom: 0.625rem;
-  font-size: 1rem;
-  line-height: 1.125rem;
+  font-size: 0.875rem;
+  line-height: 1rem;
 }
 
 .city-choice__inner input,
@@ -682,9 +691,10 @@ template {
 }
 
 .widget__city {
+  margin: 0.625rem 0 !important;
   font-size: 1.25rem;
   line-height: 1.375rem;
-  margin: 0.625rem 0 !important;
+  color: #000;
 }
 
 .widget__date,
@@ -696,6 +706,7 @@ template {
   font-style: normal;
   font-size: 0.875rem;
   line-height: 1rem;
+  color: #000;
 }
 
 .widget__temp {
@@ -705,6 +716,7 @@ template {
 .data__title,
 .data__num {
   padding: 0.3125rem;
+  color: #000;
 }
 
 .widgets-wrap {
@@ -729,8 +741,8 @@ template {
 }
 
 .widget__icon {
-  width: 6.25rem;
-  height: 6.25rem;
+  width: 5rem;
+  height: 5rem;
   overflow: hidden;
   margin: 0.625rem auto;
 }
@@ -864,6 +876,11 @@ template {
     margin-left: -2.5px;
     margin-right: -2.5px;
   }
+
+  .widget__icon {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -879,7 +896,7 @@ template {
   .city-choice__title,
   .widget__city,
   .widget__temp {
-    margin-bottom: 3.125rem;
+    margin-bottom: 1.875rem;
     font-size: 2rem;
     line-height: 2.125rem;
   }

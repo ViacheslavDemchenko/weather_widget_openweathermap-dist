@@ -17,25 +17,25 @@
 </html>
 <body>
   <div class="container-fluid">
-    <div class="container">
-      <section class="main-section">
-        <div class="main-section__inner">
-          <h1 class="main-title">Виджет погоды крупных городов России на основе API сервиса openweathermap.org</h1>
-          <div class="widget-options">
-            <div class="city-choice">
-              <h2 class="city-choice__title">Начните вводить название города</h2>
-              <div class="city-choice__inner">
-                <input type="text" id="autocomplete">
-                <ul class="cities-list"></ul>
-              </div>
+    <section class="main-section">
+      <div class="container">
+        <h1 class="main-title">Виджет погоды крупных городов России на основе API сервиса openweathermap.org</h1>
+        <div class="widget-options">
+          <div class="city-choice">
+            <h2 class="city-choice__title">Начните вводить название города</h2>
+            <div class="city-choice__inner">
+              <input type="text" id="autocomplete">
+              <ul class="cities-list"></ul>
             </div>
           </div>
+        </div>
+        <div class="main-section__inner">
           <div class="widgets-wrap">
             <div class="widget"></div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </div>
 </body>
 <script crossorigin="anonymous" src="https://cdn.polyfill.io/v3/polyfill.min.js?features=ArrayBuffer,console,DataView,document,fetch,Map,MutationObserver,Object.create,Promise,Set,String.prototype.trim,Symbol,Symbol.iterator,Symbol.prototype.description,WeakMap,WeakSet,XMLHttpRequest"></script>
